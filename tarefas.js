@@ -66,3 +66,11 @@ novaTarefaNome.addEventListener('keyup', (e) => {
         botaoAdd.click()
     }
   });
+
+listaTarefas.addEventListener('click', (e) => {
+    if (e.target.classList.contains('marcado')) {
+        e.target.classList.remove('marcado')
+    } else {
+        e.target.classList.toggle('marcado')
+    }
+})
